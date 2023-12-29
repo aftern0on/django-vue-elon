@@ -27,7 +27,7 @@ class AdvantageBlock(models.Model):
     """
 
     first = models.CharField(max_length=255, default="Первая строчка")
-    middle = models.CharField(max_length=255, default="Середина")
+    middle = models.CharField(max_length=255, default="100%")
     last = models.CharField(max_length=255, default="Последняя строчка")
 
     def __str__(self):

@@ -24,8 +24,8 @@ def create_default_objects(sender, **kwargs):
     # Создание ссылок навигационного меню
     if not NavigationMenuItem.objects.exists():
         NavigationMenuItem.objects.create(order=0, name='Главная')
-        NavigationMenuItem.objects.create(order=1, name='Технология', href='tech')
-        NavigationMenuItem.objects.create(order=2, name='График полетов', href='graphic')
-        NavigationMenuItem.objects.create(order=3, name='Гарантии', href='grants')
-        NavigationMenuItem.objects.create(order=4, name='О нас', href='about')
-        NavigationMenuItem.objects.create(order=5, name='Контакты', href='contacts')
+        NavigationMenuItem.objects.create(order=1, name='Технология', href='/tech')
+        NavigationMenuItem.objects.create(order=2, name='График полетов', href='/graphic')
+        NavigationMenuItem.objects.create(order=3, name='Гарантии', href='/grants')
+        NavigationMenuItem.objects.create(order=4, name='О нас', href='/about')
+        NavigationMenuItem.objects.create(order=5, name='Контакты', href='/contacts')
